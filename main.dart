@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(home: HomeActivity(),
-    debugShowCheckedModeBanner: false,);
+      debugShowCheckedModeBanner: false,);
   }
 }
 class HomeActivity extends StatelessWidget{
@@ -23,7 +23,7 @@ class HomeActivity extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Project-1"),
-      backgroundColor: Colors.green,
+        backgroundColor: Colors.green,
         actions: [
           IconButton(onPressed: (){MySnackBar("Search me",context);}, icon: Icon(Icons.search)),
           IconButton(onPressed: (){MySnackBar("Set me",context);}, icon: Icon(Icons.settings)),
@@ -42,17 +42,17 @@ class HomeActivity extends StatelessWidget{
             DrawerHeader(
 
               padding: EdgeInsets.all(0),
-                child:
-                UserAccountsDrawerHeader(
-              accountName:  Text("Murshed Eamin",style: TextStyle(color: Colors.cyanAccent),),
-              accountEmail: Text("murshedeamin@gmail.com",style: TextStyle(color: Colors.green),),
-                  currentAccountPicture:CircleAvatar(child: ClipOval(child:Image.asset("assets/images/3.png",
-                    width: 90,
-                    height: 90,
-                    fit: BoxFit.cover,),),),
-                  decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/2.jpg"),
-                      fit: BoxFit.cover),
-            ),
+              child:
+              UserAccountsDrawerHeader(
+                accountName:  Text("Murshed Eamin",style: TextStyle(color: Colors.cyanAccent),),
+                accountEmail: Text("murshedeamin@gmail.com",style: TextStyle(color: Colors.green),),
+                currentAccountPicture:CircleAvatar(child: ClipOval(child:Image.asset("assets/images/Me.png",
+                  width: 90,
+                  height: 90,
+                  fit: BoxFit.cover,),),),
+                decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/2.jpg"),
+                    fit: BoxFit.cover),
+                ),
               ),
             ),
             ListTile(leading: Icon(Icons.people),
